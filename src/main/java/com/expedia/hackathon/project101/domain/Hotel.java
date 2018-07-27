@@ -5,14 +5,25 @@ public class Hotel {
     String address;
     Integer price;
     Float rating;
-    Float distance;
+    String description;
+    String imageUrl;
 
-    public Hotel(String name, String address, Integer price, Float rating, Float distance) {
+    public Hotel(String name, String address, Integer price, Float rating, String description, String imageUrl) {
         this.name = name;
         this.address = address;
         this.price = price;
         this.rating = rating;
-        this.distance = distance;
+        this.description = description;
+        this.imageUrl = imageUrl;
+
+    }
+
+    public String getImageUrl() {
+        return imageUrl;
+    }
+
+    public void setImageUrl(String imageUrl) {
+        this.imageUrl = imageUrl;
     }
 
     public String getName() {
@@ -47,11 +58,11 @@ public class Hotel {
         this.rating = rating;
     }
 
-    public Float getDistance() {
-        return distance;
+    public String getDescription() {
+        return description;
     }
 
-    public void setDistance(Float distance) {
-        this.distance = distance;
+    public void setDescription(String description) {
+        this.description = description;
     }
 }

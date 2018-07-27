@@ -104,7 +104,7 @@ public class DBHandler {
             float distance = resultSet.getFloat("Distance");
             String description = resultSet.getString("Description");
 
-            hotels.add(new Hotel(name, address, price, rating, distance));
+            //hotels.add(new Hotel(name, address, price, rating, distance));
         }
 
         return hotels;
