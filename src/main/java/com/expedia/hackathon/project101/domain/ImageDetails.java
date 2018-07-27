@@ -1,5 +1,7 @@
 package com.expedia.hackathon.project101.domain;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 public class ImageDetails {
     //location and desc that google api will provide
     String location;
@@ -7,10 +9,11 @@ public class ImageDetails {
     Double longitude;
     String imageb64;
 
-    public ImageDetails(String location, Double latitude, Double longitude) {
+    public ImageDetails(String location, Double latitude, Double longitude, String imageb64) {
         this.location = location;
         this.latitude = latitude;
         this.longitude = longitude;
+        this.imageb64 = imageb64;
     }
 
     public String getLocation() {
