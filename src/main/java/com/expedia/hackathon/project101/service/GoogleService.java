@@ -61,9 +61,7 @@ public class GoogleService {
             JSONObject latlng = (JSONObject) location.get("latLng");
 
             imageDetails = new ImageDetails((String)landmarkAnnotation.get("description"),
-                                                    (Double) latlng.get("latitude"), (Double) latlng.get("longitude"));
-
-            imageDetails.setImageb64(imageb64);
+                                                    (Double) latlng.get("latitude"), (Double) latlng.get("longitude"), imageb64);
 
         } catch (ParseException e) {
             //do nothing
